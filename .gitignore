@@ -1,0 +1,7 @@
+# Ignore these directories and files when pushing to repo
+keys/ 
+
+.terraform/ 
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
