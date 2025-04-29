@@ -10,6 +10,6 @@ resource "aws_key_pair" "generate_key" {
 
 resource "local_file" "private_keys" {
   content         = tls_private_key.my_key.private_key_pem
-  filename        = "./keys/"
-  file_permission = "0600"
+  filename        = "./keys/alyx.pem"
+  file_permission = "0400"
 }
